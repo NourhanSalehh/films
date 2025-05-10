@@ -1,0 +1,172 @@
+*{
+  list-style: none !important;
+  text-decoration: none !important;
+  scroll-padding-top: 2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--text-color);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5rem;
+}
+/* custom scroll bar */
+:root {
+  --main-color:#ff2c1f;
+  --text-color:#020307;
+  --bg-color:#fff;
+}
+section {
+  padding: 4.5rem 1.5rem;
+}
+.body{
+  font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+header {
+  padding: 20px 100px;
+  transition: 0.5s;
+}
+header.shadow {
+  background-color: var(--bg-color);
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+header.shadow .navbar a {
+  color: var(--text-color);
+}
+header.shadow .logo  {
+  color: var(--text-color);
+}
+header .logo {
+  color: var(--bg-color);
+}
+.logo i {
+  color: var(--bg-color);
+}
+.navbar a {
+  color: var(--main-color);
+}
+.navbar a::after{
+  content: '';
+  position: absolute;
+  background-color: var(--main-color);
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s all linear;
+}
+.navbar a:hover::after,
+.navbar .home-active::after {
+  width: 100%;
+}
+#menu-icon {
+  cursor: pointer;
+}
+header .btn {
+  background-color: var(--main-color);
+}
+.btn:hover {
+  background: #fa1216;
+}
+/* Navbar */
+/* Home */
+.home {
+  background-image: url(../img/home3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home .home-text {
+  top: 40%;
+  padding-left: 80px;
+}
+.home-text h2 {
+  font-size: 4rem;
+}
+.home-text .btn {
+  background-color: var(--main-color);
+}
+.btn:hover {
+  background: #fa1216;
+}
+/* Home */
+/* Movies */
+.heading {
+  border-bottom: 1px solid var(--main-color);
+  max-width: 1000px;
+}
+.movie{
+  max-width: 1000px;
+}
+.box-img img {
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+.box-img img:hover {
+  transform:translateY(-10px);
+}
+.box h3 {
+  color: var(--main-color);
+}
+.box span {
+  font-size: 13px;
+}
+/* Movies */
+/* Coming Soon */
+.container {
+  max-width: 1000px;
+}
+/* Coming Soon */
+/* news */
+.news {
+  max-width: 1000px;
+}
+.news form input[type="email"] {
+  outline: 0;
+}
+.news input::placeholder {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.news .btn {
+  outline: 0;
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.btn:hover {
+  background: #fa1216;
+}
+/* news */
+/* footer */
+.footer {
+  max-width: 1000px;
+}
+.logo i {
+  color: var(--main-color);
+}
+.social-icons a {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 4px solid rgb(2, 3, 7, 0.4) ;
+  transition: 0.2s all linear;
+}
+.social-icons a:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+/* footer */
+/* copy */
+.copy span {
+  color: var(--main-color);
+  cursor: pointer;
+}
+/* copy */
